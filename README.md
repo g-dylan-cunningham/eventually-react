@@ -1,4 +1,8 @@
-# webPackBoilerplate
-# webPackReactBoilerplate1
-# webPackReactBoilerplate1
-# q4LoginServer
+# Galvanize Capstone Project 
+### server side repo
+
+## Technologies used:
+* sails.js
+* waterline orm
+* mongodb
+
