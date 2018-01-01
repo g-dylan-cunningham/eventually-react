@@ -1,0 +1,529 @@
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+$mainColor: #7777bb;
+$pastelGreen: #aaf3a6;
+$limeGreen: #33cc66;
+$purple: #cda7d3;
+$brown: #a29276;
+$yellow: #fff07b;
+$darkerBrown: #7C6E54;
+
+.userLoggedInPic{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+
+
+#loginTopSpacer{
+  height: 12em;
+  text-align: center;
+  #loginImage{
+    padding-top:3%;
+    margin:auto;
+    width: 20vw;
+    height: auto;
+  }
+}
+
+.right{
+  float: right;
+}
+
+
+
+
+
+.test{
+  background-color: $mainColor;
+  h1{
+    text-transform: uppercase;
+  }
+}
+
+#friendsOuterContainer{
+  margin-top: 3em;
+}
+
+#title{
+  margin:0px;
+  font-size: 33px;
+  font-weight: bold;
+  font-variant: small-caps;
+  display: block;
+}
+
+.friendsContainer{
+  margin:0px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  .friendBox{
+    flex: 1;
+    height: 170px;
+    width: 130px;
+    display: inline-block;
+    margin: 0px;
+    margin-top: 30px;
+    align-content: center;
+    margin-left: 1em;
+
+
+    .friendNameBox{
+      height: 20%;
+      width: 90%;
+      display: block;
+      font-size: 1.5em;
+    }
+
+    .friendImageBox{
+      margin: 0 auto;
+      overflow: hidden;
+      object-fit: fill;
+
+      .friendImageImg{
+        display: block;
+        margin: 0 auto;
+        height: 130px;
+        width: 130px;
+        border-radius: 50%;
+      }
+    }
+    .center{
+      text-align: center;
+    }
+  }
+}
+
+.rsvpTextBox{
+  text-align: center;
+  .rsvpText{
+    margin: 0px;
+    font-size: 1.7em;
+    font-variant: small-caps;
+    font-weight: bold;
+  }
+}
+
+
+#friendShowImage{
+  display: block;
+  margin: auto;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+
+
+.eventShowLeftBlock{
+  text-align: center;
+  .eventShowLeftContent{
+    display: inline-block;
+  }
+}
+
+
+.center{
+  text-align: center;
+  align-content: center;
+  margin: auto;
+}
+
+.centerItem{
+  display: block;
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+
+.selectedEvent{
+  background-color: lightyellow;
+  margin: 2px;
+  color: blue;
+  padding: 5px;
+}
+
+.unSelectedEvent{
+  background-color: #f3f3f3;
+  margin: 2px;
+  padding: 5px;
+}
+
+
+
+.margin-top{
+  margin-top: 5vh;
+}
+
+.margin-top-sm{
+  margin-top: 2vh;
+}
+
+.margin-top-tiny{
+  margin-top: 1.2vh;
+}
+
+.formGroup{
+  display: flex;
+}
+
+
+#navLogoAtag{
+  margin: 0px;
+  padding: 0px;
+}
+#navLogo{
+  width: 68px;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.calendarGroup{
+  height: 400px;
+  width: 500px;
+  background-color: blue;
+}
+
+
+@keyframes myAnimation{
+  0%{
+      opacity: 1;
+  }
+  80%{
+      opacity: 0.9;
+  }
+  100%{
+      display: none;
+      opacity: 0;
+  }
+}
+
+#disappearWarning{
+  text-align: center;
+  animation-name: myAnimation;
+  animation-duration: 4000ms;
+  animation-fill-mode: forwards;
+  color: red;
+  font-size: 2em;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+
+
+
+
+.eventsGroup{
+  background-color: #f3f3f3;
+  padding-left: .5em;
+  padding-right: .5em;
+  .linkElement:hover{
+    background-color: rgba(0, 0, 0, .1);
+  }
+  .linkElement{
+    max-height: 100px;
+    overflow: hidden;
+
+      .eventButtons, .eventText{
+        padding: 0px;
+        .title{
+          font-variant: small-caps;
+          font-weight: 600;
+        }
+      }
+      #hosting{
+        font-variant:small-caps;
+        font-weight: 500;
+      }
+      .accepted{
+        border-left: 5px solid $limeGreen;
+      }
+      .maybe{
+        border-left: 5px solid $pastelGreen;
+      }
+      .declined{
+        border-left: 5px solid $brown;
+      }
+      .invited{
+        border-left: 5px solid $purple;
+      }
+      .hosting{
+        border-left: 5px solid yellow;
+      }
+    }
+
+}
+
+
+
+
+
+
+
+
+#event2Container{
+  width: 100%;
+}
+
+#event3Container{
+  width: 100%;
+  margin-top: 3em;
+}
+
+.friendFreeItem{
+  background: #f3f3f3;
+  margin: 1px;
+  font-family: helvetica;
+  border: 1px solid #ccc;
+}
+
+.friendFreeItem:focus {
+  background: #e0e0e0;
+  outline: none;
+  -webkit-box-shadow: inset 0px 0px 4px #ccc;
+     -moz-box-shadow: inset 0px 0px 4px #ccc;
+          box-shadow: inset 0px 0px 4px #ccc;
+}
+.friendFreeItem:hover{
+  background: #e0e0e0;
+  border: 1px solid f3f3f3;
+}
+
+
+
+.eventHeaderGroup{
+  height: 5vh;
+  background-color: #f3f3f3;
+  width: 100%;
+  display: flex;
+
+  .eventHeaderButton, .eventHeaderButtonDead{
+    flex: 1;
+    height: 2.5em;
+    margin: 2px;
+    background: #ededed;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 1px 1px 2px #ccc;
+       -moz-box-shadow: 1px 1px 2px #ccc;
+            box-shadow: 1px 1px 2px #ccc;
+    padding: 10px 30px;
+    border-radius: 2px;
+    cursor: pointer;
+    .eventHeaderButtonText, .eventHeaderButtonTextDead{
+      font-weight: bold;
+      font-variant: small-caps;
+      color: darkgrey;
+    }
+  }
+  .eventHeaderButton:focus {
+    background: #e0e0e0;
+    outline: none;
+    -webkit-box-shadow: inset 0px 0px 4px #ccc;
+       -moz-box-shadow: inset 0px 0px 4px #ccc;
+            box-shadow: inset 0px 0px 4px #ccc;
+  }
+  .eventHeaderButton:hover{
+    text-decoration: none;
+    background: #f3f3f3;
+    outline: none;
+    -webkit-box-shadow: inset 0px 0px 4px #ccc;
+       -moz-box-shadow: inset 0px 0px 4px #ccc;
+            box-shadow: inset 0px 0px 4px #ccc;
+  }
+  #selectedButton{
+    background: $limeGreen;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 1px 1px 2px #ccc;
+       -moz-box-shadow: 1px 1px 2px #ccc;
+            box-shadow: 1px 1px 2px #ccc;
+    padding: 10px 30px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  #selectedButton:focus{
+    background: $pastelGreen;
+    outline: none;
+    -webkit-box-shadow: inset 0px 0px 4px #ccc;
+       -moz-box-shadow: inset 0px 0px 4px #ccc;
+            box-shadow: inset 0px 0px 4px #ccc;
+  }
+  #selectedButton:hover{
+    background: $pastelGreen;
+    text-decoration: none;
+    outline: none;
+    -webkit-box-shadow: inset 0px 0px 4px #ccc;
+       -moz-box-shadow: inset 0px 0px 4px #ccc;
+            box-shadow: inset 0px 0px 4px #ccc;
+  }
+  .selectedText{
+    margin-top: -5px;
+    font-weight: bold;
+    font-variant: small-caps;
+    color: #555555;
+    font-size: 1.2em;
+  }
+  .eventHeaderButtonDead{
+    background: lightgrey;
+    -webkit-box-shadow: 0px 0px 21px #ccc;
+       -moz-box-shadow: 0px 1px 21px #ccc;
+            box-shadow: 0px 0px 21px #ccc;
+    .eventHeaderButtonTextDead{
+      color: transparent;
+      text-shadow: 0 0 1px #000;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.event4rsvp{
+  display: inline-block;
+  margin: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.calShell{
+  height:500px;
+  width:600px;
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction:row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.calShell div{
+}
+
+.dateBox, .dayBox{
+  border: 1px solid black;
+  height: 90px;
+  flex-basis: 13.9%;
+  margin-top: 2px;
+  background-color: $pastelGreen;
+}
+
+#monDay{
+  font-weight: 600;
+  text-align: left;
+  margin-top:0;
+  font-size: .9em;
+}
+
+#grey{
+  background-color: lightgrey;
+}
+
+.green{
+  background-color: $limeGreen;
+}
+
+#dateBoxText{
+  font-family: cursive;
+}
+
+.dayBox{
+  height: 30px;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+}
+
+#dayBoxText{
+  font-variant: small-caps;
+  font-weight: bold;
+  margin: auto;
+}
+
+.monthHeadComp {
+  flex-basis: 100%;
+
+}
+
+#monthHeading {
+  margin:auto;
+  text-align: center;
+}
+
+.monthControl{
+  display: flex;
+}
+
+.monthControlChild{
+  flex: 3;
+  text-align:center;
+  #title{
+    margin:auto;
+    vertical-align:middle;
+  }
+}
+
+.monthControlChildBut{
+  flex: 1;
+}
+
+
+
+.eventUl{
+  list-style-type: none;
+  list-style-position: outside;
+  padding:3px;
+  .eventLi{
+    font-size: .6em;
+    margin-left: 0px;
+    padding:0px;
+    font-weight: 600;
+  }
+}
